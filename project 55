@@ -1,0 +1,27 @@
+
+
+
+
+const element = document.querySelector(elementId);
+    element.addEventListener("collide",e=>{
+      if (elementId.includes("#coin")) {
+        element.setAttribute("visible",false);
+        console.log("ring collision");
+      }
+      if(elementId.includes("#fish")){
+        console.log("fish collision");
+      }
+    });
+
+
+
+    //set the static body attribute of physics system
+    coinEl.setAttribute("static-body",{
+      shape: "sphere",
+      sphereRadius: 2 
+    });
+
+
+
+  },
+});
